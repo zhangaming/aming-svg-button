@@ -4,16 +4,28 @@
     <amingSvgButton @click="handle" :size="'large'">Confirm</amingSvgButton>
     <amingSvgButton @click="handle">确定</amingSvgButton>
     <amingSvgButton @click="handle" :size="'small'"></amingSvgButton>
+    <br/>
+    <amingSmile ></amingSmile>
+    <amingSmile :active="false"></amingSmile>
+    <amingSmile :colorAry="['#fff','#ccc']"></amingSmile>
+    <!--  -->
   </div>
 </template>
 
 <script>
 import amingSvgButton from './components/aming-svg-button/aming-svg-button.vue'
+import amingSmile from './components/aming-smile/aming-smile.vue'
 
 export default {
   name: 'App',
+  data(){
+    return{
+      SmileAry:[]
+    }
+  },
   components: {
-    amingSvgButton
+    amingSvgButton,
+    amingSmile
   },
   methods: {
     handle(){

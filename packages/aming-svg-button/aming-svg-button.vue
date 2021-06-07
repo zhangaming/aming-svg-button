@@ -2,7 +2,7 @@
  * @Author: Do not edit
  * @Date: 2021-06-05 10:32:04
  * @LastEditors: zhangfuming
- * @LastEditTime: 2021-06-07 11:54:25
+ * @LastEditTime: 2021-06-07 17:18:37
  * @Description: Do not Edit
 -->
 
@@ -64,7 +64,7 @@ function particles(parent, quantity, x, y, ) {
       }
   }
   export default{
-    name: 'amingSvgButton',
+    name: 'AmingSvgButton',
     props:{
       typeColor:{
         type: String,
