@@ -1,14 +1,21 @@
 {
   "name": "aming-svg-button",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
+  "description": "aming-svg-button",
+  "main": "lib/aming-svg-button.umd.min",
+  "author": "zhangfuming",
+  "private": false,
+  "license": "MIT",
+  "style": "lib/aming-svg-button.css",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name aming-svg-button --dest lib packages/index.js"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
+    "core-js": "^2.6.12",
+    "gsap": "^3.6.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {

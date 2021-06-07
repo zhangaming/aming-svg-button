@@ -1,18 +1,25 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <amingSvgButton @click="handle" :size="'large'">Confirm</amingSvgButton>
+    <amingSvgButton @click="handle">确定</amingSvgButton>
+    <amingSvgButton @click="handle" :size="'small'"></amingSvgButton>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import amingSvgButton from './components/aming-svg-button/aming-svg-button.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    amingSvgButton
+  },
+  methods: {
+    handle(){
+      console.log(2)
+    }
+  },
 }
 </script>
 
